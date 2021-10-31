@@ -20,8 +20,8 @@ $database = array(
 		"hwid" => ""
 	),
 	array(
-		"key" => "key_synapse",
-		"hwid" => ""
+		"key" => "key_hkj8Zb18sfSpzHc5",
+		"hwid" => "e1bdf1b472f199c74e8808b1a9552332c1f0f62f345e3440718788e6825514667dc33714f71b4e60f385318b03285d43c93e9c7ee74940d31a8fabe19e66ec5e"
 	),
 );
 
