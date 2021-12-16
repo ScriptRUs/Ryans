@@ -54,7 +54,7 @@ farm:Dropdown("Select Quest",Quest, true, function(Value)
     SelectedQuest = Value
 end)
 farm:Slider("Tp Distance",{
-    min = 0; -- min value of the slider
+    min = -5; -- min value of the slider
     max = 10; -- max value of the slider
     precise = true; -- max 2 decimals
 },function(value)
