@@ -37,7 +37,7 @@ end)
 Clicks:Toggle("Auto Collect Gifts", function(Vals)
     CollectGift = Vals
 end)
-Clicks:Label("Auto Rebirth Is Honestly Built Into The Game Lmao")
+
 OpenEggs:Toggle("Open Egg", function(Vals)
     OpenEgg = Vals
 end)
