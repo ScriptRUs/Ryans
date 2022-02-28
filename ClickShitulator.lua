@@ -7,6 +7,13 @@ end
 for _,Zone in pairs(game:GetService("Workspace").Zones:GetChildren()) do
     table.insert(ZoneTable, Zone.Name)
 end
+
+-- Anti AFK
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+	game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	wait(1)
+	game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
 -- All Of The God Damn Easy Ass Shit (Ui Lib Set Ups)
 local Luxtl = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Luxware-UI-Library/main/Source.lua"))()
 
