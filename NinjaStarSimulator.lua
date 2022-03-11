@@ -2,13 +2,18 @@
 Scripting By: Ryans#3857
 Cash App: $ScriptRUs
 ]]--
-while _G.Toggle do wait(0)
+while _G.Toggle do wait(2)
+if _G.Toggle == true then
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 for i,v in pairs(game:GetService("Workspace").MonsterSpawners.Japan[_G.Map]:GetDescendants()) do
     if v.Name == "HumanoidRootPart" then
         tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(1, Enum.EasingStyle.Linear)
         tween = tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(v.Position)})
         tween:Play()
     end
+end
+        elseif _G.Toggle == false then
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
 end
 end
 while _G.AutoCollect do wait(0)
@@ -18,10 +23,4 @@ for _,v in pairs(game:GetService("Workspace").Coin:GetDescendants()) do
         wait()
         firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
     end
-end
-end
-if _G.Toggle == true then
-    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Anchored = true
-elseif _G.Toggle == false then
-    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Anchored = false
 end
