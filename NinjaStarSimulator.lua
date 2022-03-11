@@ -20,3 +20,8 @@ for _,v in pairs(game:GetService("Workspace").Coin:GetDescendants()) do
     end
 end
 end
+if _G.Toggle == true then
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Anchored = true
+elseif _G.Toggle == false then
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Anchored = false
+end
